@@ -1,6 +1,4 @@
 @import url("fonts.css");
-@import url("font-awesome/css/font-awesome.min.css");
-@import url("micons/micons.css");
 html {
     font-size: 10px;
 }
@@ -72,7 +70,7 @@ h6,
 .h05,
 .h06 {
     font-family: "poppins-semibold", sans-serif;
-    color: #313131;
+    color: #1f1f1f;
     font-style: normal;
     text-rendering: optimizeLegibility;
     margin-bottom: 2.1rem;
@@ -196,7 +194,7 @@ blockquote:before {
     font-size: 8rem;
     line-height: 0px;
     margin: 0;
-    color: #313131;
+    color: #3a4d8f;
     font-family: arial, sans-serif;
     position: absolute;
     top: 3rem;
@@ -378,7 +376,7 @@ td {
 }
 
 th {
-    color: #313131;
+    color: #3a4d8f;
     font-family: "poppins-bold", sans-serif;
 }
 
@@ -607,7 +605,7 @@ select {
     border: 0;
     outline: none;
     /* vertical-align: middle; */
-    color: #313131;
+    color: #3a4d8f;
     font-family: "poppins-regular", sans-serif;
     font-size: 1.5rem;
     line-height: 3rem;
@@ -769,7 +767,7 @@ input[type="button"] {
     padding: 0 3rem;
     margin: 0 .3rem 1.2rem 0;
     background: #d8d8d8;
-    color: #313131;
+    color: #3a4d8f;
     text-decoration: none;
     cursor: pointer;
     text-align: center;
@@ -805,7 +803,7 @@ button.button-primary,
 input[type="submit"].button-primary,
 input[type="reset"].button-primary,
 input[type="button"].button-primary {
-    background: #313131;
+    background: #3a4d8f;
     color: #FFFFFF;
 }
 
@@ -846,7 +844,7 @@ button.large,
 button.stroke,
 .button.stroke {
     background: transparent !important;
-    border: 3px solid #313131;
+    border: 3px solid #3a4d8f;
     border-radius: 15px;
     line-height: 4.8rem;
 }
@@ -925,7 +923,7 @@ input::-moz-focus-inner {
     line-height: 6rem;
     text-indent: 0;
     background: transparent;
-    color: #313131;
+    color: #3a4d8f;
 }
 
 
@@ -1109,7 +1107,7 @@ input::-moz-focus-inner {
     left: 0;
     top: -3rem;
     font-family: "poppins-bold", sans-serif;
-    color: #313131;
+    color: #1f1f1f;
     text-transform: uppercase;
     letter-spacing: .2rem;
     font-size: 1.5rem;
@@ -1117,7 +1115,7 @@ input::-moz-focus-inner {
 }
 
 .skill-bars li .progress {
-    background: #313131;
+    background: #3a4d8f;
     position: relative;
     height: 100%;
 }
@@ -1131,7 +1129,7 @@ input::-moz-focus-inner {
     color: white;
     font-size: 1.1rem;
     line-height: 1;
-    background: #313131;
+    background: #3a4d8f;
     padding: .6rem .6rem;
     border-radius: 3px;
 }
@@ -1143,7 +1141,7 @@ input::-moz-focus-inner {
     margin-left: -5px;
     border-right: 5px solid transparent;
     border-left: 5px solid transparent;
-    border-top: 5px solid #313131;
+    border-top: 5px solid #3a4d8f;
     content: "";
 }
 
@@ -1255,7 +1253,7 @@ input::-moz-focus-inner {
 .section-intro h1 {
     font-family: "poppins-semibold", serif;
     font-size: 3.6rem;
-    color: #313131;
+    color: #1f1f1f;
     line-height: 1.25;
     margin-bottom: 1.2rem;
 }
@@ -1301,12 +1299,7 @@ input::-moz-focus-inner {
 }
 
 
-/** 
- * ===================================================================
- * 09. header styles - (_layout.scss)
- *
- * ------------------------------------------------------------------- 
- */
+/* 09. header styles - (_layout.scss) */
 
 header {
     position: fixed;
@@ -1354,10 +1347,7 @@ header .logo a {
 }
 
 
-/**
- * menu toggle - (_layout.css)
- * ------------------------------------------------------------------- 
- */
+/* menu toggle - (_layout.css) */
 
 .menu-toggle {
     float: left;
@@ -1513,11 +1503,7 @@ header .logo a {
 }
 
 
-/**
- * responsive:
- * header styles
- * --------------------------------------------------------------- 
- */
+/* responsive: header styles*/
 
 @media only screen and (max-width:1024px) {
     header .top-bar {
@@ -1544,12 +1530,7 @@ header .logo a {
 }
 
 
-/** 
- * ===================================================================
- * 10. intro - (_layout.scss) 
- *
- * ------------------------------------------------------------------- 
- */
+/* 10. intro - (_layout.scss) */
 
 #intro {
     background: #151515 url(../images/intro-bg.jpg) no-repeat center bottom;
@@ -1623,7 +1604,6 @@ header .logo a {
 }
 
 .intro-content .intro-position span::after {
-    content: "|";
     text-align: center;
     display: inline-block;
     padding: 0 8px 0 14px;
@@ -1631,7 +1611,6 @@ header .logo a {
 }
 
 .intro-content .intro-position span:first-child::before {
-    content: "|";
     text-align: center;
     display: inline-block;
     padding: 0 14px 0 8px;
@@ -1657,7 +1636,6 @@ header .logo a {
 
 .intro-content .button::after {
     display: inline-block;
-    content: "\f107";
     font-family: fontAwesome;
     font-size: 1.6rem;
     line-height: inherit;
@@ -1694,11 +1672,7 @@ header .logo a {
 }
 
 
-/**
- * responsive:
- * Intro
- * --------------------------------------------------------------- 
- */
+/* responsive: Intro */
 
 @media only screen and (max-width:1024px) {
     .intro-content h1 {
@@ -1762,12 +1736,7 @@ header .logo a {
 }
 
 
-/** 
- * ===================================================================
- * 11. about - (_layout.scss)
- *
- * ------------------------------------------------------------------- 
- */
+/*11. about - (_layout.scss) */
 
 #about {
     background: #FFFFFF;
@@ -1824,7 +1793,7 @@ header .logo a {
 
 .about-content .info-list li strong {
     font-family: "poppins-bold", sans-serif;
-    color: #313131;
+    color: #1f1f1f;
     text-transform: uppercase;
     letter-spacing: .2rem;
     font-size: 1.5rem;
@@ -1856,11 +1825,7 @@ header .logo a {
 }
 
 
-/**
- * responsive:
- * about
- * ------------------------------------------------------------------- 
- */
+/* responsive: about*/
 
 @media only screen and (max-width:1024px) {
     .intro-info {
@@ -1911,12 +1876,7 @@ header .logo a {
 }
 
 
-/** 
- * ===================================================================
- * 12. resume - (_layout.scss)
- *
- * ------------------------------------------------------------------- 
- */
+/* 12. resume - (_layout.scss) */
 
 #resume {
     padding-top: 12rem;
@@ -1961,7 +1921,7 @@ header .logo a {
     height: 4.8rem;
     width: 4.8rem;
     line-height: 4.8rem;
-    background: #313131;
+    background: #3a4d8f;
     border-radius: 50%;
     text-align: center;
     color: #FFFFFF;
@@ -2016,12 +1976,7 @@ header .logo a {
 }
 
 
-/** 
- * ===================================================================
- * 13. portfolio - (_layout.scss)
- *
- * ------------------------------------------------------------------- 
- */
+/* 13. portfolio - (_layout.scss) */
 
 #portfolio {
     background: #FFFFFF;
@@ -2109,11 +2064,7 @@ header .logo a {
 }
 
 
-/**
- * responsive:
- * portfolio
- * ------------------------------------------------------------------- 
- */
+/* responsive: portfolio**/
 
 @media only screen and (max-width:1024px) {
     #portfolio .folio-title {
@@ -2134,10 +2085,7 @@ header .logo a {
 }
 
 
-/**
- * Popup Modal - (_layout.scss)
- * ------------------------------------------------------------------
- */
+/* Popup Modal - (_layout.scss)*/
 
 .popup-modal {
     max-width: 550px;
@@ -2225,10 +2173,7 @@ header .logo a {
 }
 
 
-/**
- * transition effect for modal popup - (_layout.scss)
- * ------------------------------------------------------------------ 
- */
+/* transition effect for modal popup - (_layout.scss)*/
 
 
 /* overlay at start */
@@ -2292,12 +2237,7 @@ header .logo a {
 }
 
 
-/** 
- * ===================================================================
- * 14. call-to-action section - (_layout.scss)
- *
- * ------------------------------------------------------------------- 
- */
+/* 14. call-to-action section - (_layout.scss) */
 
 #cta {
     padding-top: 10.2rem;
@@ -2325,10 +2265,7 @@ header .logo a {
 }
 
 
-/**
- * section ads - (_layout.scss)
- * ------------------------------------------------------------------- 
- */
+/*section ads - (_layout.scss)*/
 
 .section-ads h2 {
     position: relative;
@@ -2349,7 +2286,7 @@ header .logo a {
 
 .section-ads h2 a,
 .section-ads h2 a:visited {
-    color: #313131;
+    color: #3a4d8f;
 }
 
 .section-ads span {
@@ -2357,11 +2294,7 @@ header .logo a {
 }
 
 
-/**
- * responsive:
- * cta
- * -------------------------------------------------------------------
- */
+/* responsive: cta */
 
 @media only screen and (max-width:650px) {
     .cta-content {
@@ -2400,12 +2333,7 @@ header .logo a {
 }
 
 
-/** 
- * ===================================================================
- * 16. stats - (_layout.scss)
- *
- * ------------------------------------------------------------------- 
- */
+/*16. stats - (_layout.scss) */
 
 #stats {
     background: #3a4d8f;
@@ -2446,11 +2374,7 @@ header .logo a {
 }
 
 
-/**
- * responsive:
- * stats
- * -------------------------------------------------------------------
- */
+/* responsive: stats*/
 
 @media only screen and (max-width:1024px) {
     #stats .stat:nth-child(n) {
@@ -2478,10 +2402,7 @@ header .logo a {
 }
 
 
-/**
- * loader animation - (_layout.scss)
- * --------------------------------------------------------------- 
- */
+/* loader animation - (_layout.scss) */
 
 .s-loader {
     margin: 1.2rem auto 3rem;
@@ -2544,12 +2465,7 @@ header .logo a {
 }
 
 
-/** 
- * ===================================================================
- * 18. footer - (_layout.scss)
- *
- * ------------------------------------------------------------------- 
- */
+/* 18. footer - (_layout.scss)*/
 
 footer {
     padding-bottom: 3rem;
@@ -2610,11 +2526,7 @@ footer .copyright span:last-child::after {
 }
 
 
-/**
- * responsive:
- * footer
- * -------------------------------------------------------------------
- */
+/* responsive: footer*/
 
 @media only screen and (max-width:768px) {
     footer {
@@ -2635,10 +2547,7 @@ footer .copyright span:last-child::after {
 }
 
 
-/**
- * go to top - (_layout.scss)
- * ------------------------------------------------------------------- 
- */
+/* go to top - (_layout.scss)*/
 
 #go-top {
     position: fixed;
@@ -2674,7 +2583,12 @@ footer .copyright span:last-child::after {
 }
 
 #go-top a:hover {
-    background: #000000;
+    background: #2c2f46;
+}
+
+#go-top img {
+    width: 4rem;
+    height: 4rem;
 }
 
 
@@ -2794,14 +2708,15 @@ form ion-icon {
 .load-more {
     display: inline-block;
     margin-top: 30px;
-    padding: 20px 50px;
+    padding: 10px 30px;
     background-color: #2c2f46;
     text-decoration: none;
     font-size: large;
     color: azure;
     font-weight: 500;
     cursor: pointer;
-    border-radius: 20px;
+    border-radius: 15px;
+    font-family: monospace;
 }
 
 @media only screen and (min-width: 900px) {
@@ -2831,8 +2746,8 @@ form ion-icon {
     position: absolute;
     bottom: 0;
     right: 0;
-    width: 45px;
-    height: 45px;
+    width: 40px;
+    height: 40px;
     padding-bottom: 1rem;
     padding-right: 1.15rem;
 }
