@@ -806,9 +806,7 @@ img.mfp-img {
 
 @media screen and (max-width:800px) and (orientation:landscape),
 screen and (max-height:300px) {
-    /**
-	     * Remove all paddings around the image on small screen
-	     */
+    /* Remove all paddings around the image on small screen */
     .mfp-img-mobile .mfp-image-holder {
         padding-left: 0;
         padding-right: 0;
@@ -899,6 +897,3 @@ screen and (max-height:300px) {
     right: 0;
     padding-top: 0;
 }
-
-
-/*# sourceMappingURL=vendor.css.map */

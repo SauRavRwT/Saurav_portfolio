@@ -35,10 +35,7 @@ body {
 }
 
 
-/**
- * links - (_document-setup.scss)
- * -------------------------------------------------------------------
- */
+/* links - (_document-setup.scss) */
 
 a,
 a:visited {
@@ -2741,7 +2738,8 @@ form ion-icon {
     }
 }
 
-.photo-download_info {
+
+/* .photo-download_info {
     display: flex;
     position: absolute;
     bottom: 0;
@@ -2754,7 +2752,7 @@ form ion-icon {
 
 .photo-download_info:hover img {
     bottom: 0;
-}
+} */
 
 
 /* Lightbox CSS */
