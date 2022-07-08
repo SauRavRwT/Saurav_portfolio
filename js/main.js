@@ -1,10 +1,7 @@
 (function($) {
 
     "use strict";
-
-    /*---------------------------------------------------- */
-    /* Preloader
-    ------------------------------------------------------ */
+    /* Preloader */
     $(window).load(function() {
 
         // will first fade out the loading animation 
@@ -17,26 +14,17 @@
 
     })
 
-
-    /*---------------------------------------------------- */
-    /* FitText Settings
-    ------------------------------------------------------ */
+    /* FitText Settings */
     setTimeout(function() {
 
         $('#intro h1').fitText(1, { minFontSize: '42px', maxFontSize: '84px' });
 
     }, 100);
 
-
-    /*---------------------------------------------------- */
-    /* FitVids
-    ------------------------------------------------------ */
+    /* FitVids */
     $(".fluid-video-wrapper").fitVids();
 
-
-    /*---------------------------------------------------- */
-    /* Owl Carousel
-    ------------------------------------------------------ */
+    /* Owl Carousel */
     $("#owl-slider").owlCarousel({
         navigation: false,
         pagination: true,
@@ -48,18 +36,12 @@
         navigationText: false
     });
 
-
-    /*----------------------------------------------------- */
-    /* Alert Boxes
-  	------------------------------------------------------- */
+    /* Alert Boxes */
     $('.alert-box').on('click', '.close', function() {
         $(this).parent().fadeOut(500);
     });
 
-
-    /*----------------------------------------------------- */
-    /* Stat Counter
-  	------------------------------------------------------- */
+    /* Stat Counter */
     var statSection = $("#stats"),
         stats = $(".stat-count");
 
@@ -92,10 +74,7 @@
 
     });
 
-
-    /*---------------------------------------------------- */
-    /*	Masonry
-    ------------------------------------------------------ */
+    /*	Masonry */
     var containerProjects = $('#folio-wrapper');
 
     containerProjects.imagesLoaded(function() {
@@ -107,10 +86,7 @@
 
     });
 
-
-    /*----------------------------------------------------*/
-    /*	Modal Popup
-    ------------------------------------------------------*/
+    /*	Modal Popup*/
     $('.item-wrap a').magnificPopup({
 
         type: 'inline',
@@ -126,10 +102,7 @@
         $.magnificPopup.close();
     });
 
-
-    /*-----------------------------------------------------*/
-    /* Navigation Menu
-   ------------------------------------------------------ */
+    /* Navigation Menu */
     var toggleButton = $('.menu-toggle'),
         nav = $('.main-navigation');
 
@@ -152,10 +125,7 @@
 
     });
 
-
-    /*---------------------------------------------------- */
-    /* Highlight the current section in the navigation bar
-    ------------------------------------------------------ */
+    /* Highlight the current section in the navigation bar */
     var sections = $("section"),
         navigation_links = $("#main-nav-wrap li a");
 
@@ -179,10 +149,7 @@
         offset: '25%'
     });
 
-
-    /*---------------------------------------------------- */
-    /* Smooth Scrolling
-    ------------------------------------------------------ */
+    /* Smooth Scrolling */
     $('.smoothscroll').on('click', function(e) {
 
         e.preventDefault();
@@ -198,16 +165,10 @@
 
     });
 
-
-    /*---------------------------------------------------- */
-    /*  Placeholder Plugin Settings
-    ------------------------------------------------------ */
+    /*  Placeholder Plugin Settings */
     $('input, textarea, select').placeholder()
 
-
-    /*----------------------------------------------------- */
-    /* Back to top
-   ------------------------------------------------------- */
+    /* Back to top- */
     var pxShow = 300; // height on which the button will show
     var fadeInTime = 400; // how slow/fast you want the button to show
     var fadeOutTime = 400; // how slow/fast you want the button to hide
