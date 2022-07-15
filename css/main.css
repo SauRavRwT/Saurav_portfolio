@@ -27,7 +27,7 @@ body {
 }
 
 body {
-    background: #151515;
+    background: #000;
     font-family: "lora-regular", serif;
     font-size: 1.7rem;
     line-height: 3rem;
@@ -2472,7 +2472,7 @@ footer {
 
 footer a,
 footer a:visited {
-    color: #FFFFFF;
+    color: #3a4d8f;
 }
 
 footer a:hover,
@@ -2650,7 +2650,7 @@ input {
 input::placeholder {
     opacity: .5;
     color: #2c2f46;
-    font-family: monospace;
+    font-family: "poppins-regular", sans-serif;
 }
 
 form ion-icon {

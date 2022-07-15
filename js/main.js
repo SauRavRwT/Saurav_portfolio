@@ -199,7 +199,7 @@ class Papers {
         this.galleryDIv = document.querySelector('.gallery');
         this.searchForm = document.querySelector('.header form');
         this.loadMore = document.querySelector('.load-more');
-        this.logo = document.querySelector('.logo')
+        this.paperslogo = document.querySelector('.paperslogo')
         this.pageIndex = 1;
         this.searchValueGlobal = '';
         this.eventHandle();
@@ -215,7 +215,7 @@ class Papers {
         this.loadMore.addEventListener('click', (e) => {
             this.loadMoreImages(e);
         })
-        this.logo.addEventListener('click', () => {
+        this.paperslogo.addEventListener('click', () => {
             this.pageIndex = 1;
             this.galleryDIv.innerHTML = '';
             this.getImg(this.pageIndex);
