@@ -289,3 +289,22 @@ class Papers {
 }
 
 const gallery = new Papers;
+
+/* Quote Script */
+const api = "https://api.quotable.io/random";
+
+const quote = document.getElementById("quote");
+const author = document.getElementById("author");
+const btn = document.getElementById("btn");
+
+btn.addEventListener("click", getQuote);
+var interval = setInterval(function() { getQuote() }, 20000);
+
+function getQuote() {
+    fetch(api)
+        .then((res) => res.json())
+        .then((data) => {
+            quote.innerHTML = `"${data.content}"`;
+            author.innerHTML = `- ${data.author}`;
+        });
+}
