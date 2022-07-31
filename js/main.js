@@ -246,10 +246,10 @@ class Papers {
             item.classList.add('item');
             item.innerHTML = `
 		<a href='${photo.src.original}' data-lightbox="mygallary" data-title="${photo.photographer}">
-		  <img src="${photo.src.large}">
+		  <img src="${photo.src.medium}">
 		  <h3>${photo.photographer}</h3>
 		</a>
-		<a href='${photo.src.original}' target="_blank" download="${photo.src.original}">
+		<a href='${photo.src.large}' target="_blank" download="${photo.src.large}">
 		  <img class="photo-download_info" src="./images/download.png">
 		</a>
 		`;
